@@ -1,0 +1,9 @@
+NORE
+node_modules/
+dist/
+.env.local
+.env
+.DS_Store
+firebase-debug.log
+.firebase/
+ 

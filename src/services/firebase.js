@@ -19,4 +19,10 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
+<<<<<<< HEAD
 export default app;
+=======
+export default app;
+ 
+console.log("Firebase config loaded:", firebaseConfig);
+>>>>>>> 00b6243661dd7ef988c1af00562fd400e3df01bc

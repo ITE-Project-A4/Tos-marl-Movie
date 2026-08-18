@@ -90,7 +90,11 @@ export default function Register() {
                 required
                 value={form.username}
                 onChange={handleChange}
+<<<<<<< HEAD
                 placeholder="e.g. Your Name "
+=======
+                placeholder="e.g. sovannvey"
+>>>>>>> 00b6243661dd7ef988c1af00562fd400e3df01bc
                 className="w-full bg-surface2 border border-line rounded-lg px-3.5 py-2.5 text-sm text-paper placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-marquee/60"
               />
             </div>

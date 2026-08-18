@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { createContext, useEffect, useState } from "react";
 // import { onAuthStateChanged } from "firebase/auth";
 // import { doc, getDoc } from "firebase/firestore";
@@ -52,6 +53,8 @@
 // }
 
 
+=======
+>>>>>>> 00b6243661dd7ef988c1af00562fd400e3df01bc
 import { createContext, useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
@@ -75,6 +78,7 @@ export function AuthProvider({ children }) {
       setCurrentUser(user);
 
       if (user) {
+<<<<<<< HEAD
         try {
           const snap = await getDoc(doc(db, "users", user.uid));
           setRole(snap.exists() ? snap.data().role : "user");
@@ -86,6 +90,10 @@ export function AuthProvider({ children }) {
           console.error("Could not load user role:", err);
           setRole("user");
         }
+=======
+        const snap = await getDoc(doc(db, "users", user.uid));
+        setRole(snap.exists() ? snap.data().role : "user");
+>>>>>>> 00b6243661dd7ef988c1af00562fd400e3df01bc
       } else {
         setRole(null);
       }
